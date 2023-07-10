@@ -1,0 +1,56 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Top bar */
+
+.top-bar{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.top-bar .num-email span {
+    margin-right: 1rem;
+    color: #cacaca;
+}
+
+
+.top-bar .details ul {
+    display: flex;
+}
+
+.top-bar .details ul li {
+    margin-right: 1rem;
+    color: #cacaca;
+}
+
+.top-bar .details ul span{
+    margin-right: 1rem;
+    color: #cacaca;
+}
+
+/* Making the top bar responsive */
+
+@media (max-width: 802px) {
+    /* CSS code for small screens */
+    .top-bar{
+        white-space: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-bar .num-email span {
+        margin-right: 0.2rem;
+        color: #cacaca;
+    }
+
+    .top-bar .num-email {
+        margin-bottom: 1rem;
+    }
+    
+  }
