@@ -1,3 +1,8 @@
+:root{
+    --main-color:#f6f6f6;
+    --green: #36ba91
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -53,4 +58,135 @@ body{
         margin-bottom: 1rem;
     }
     
+  }
+
+
+  /* Header */
+
+  header{
+    background-color: var(--main-color);
+    margin-top: 3rem;
+    height: 19rem;
+    display: flex;
+    
+  }
+
+
+  header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  header .header-content h1{
+    margin-right: 7rem;
+  }
+
+  header .header-content ul {
+    display: flex;
+    
+    
+  }
+
+  header .header-content ul li {
+      margin-right: 7rem; 
+  }
+
+  header .header-content .fas {
+    cursor: pointer;
+    color: var(--green);
+  }
+
+  /* Making the header section responsive */
+
+
+ @media ( min-width:959px)  and (max-width:1478px) {
+    /* CSS code for medium screens */
+    header .header-content{
+        flex-direction: column;
+        align-content: center;
+      }
+
+      header .header-content h1{
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+
+      header .header-content .fas {
+       margin-bottom: 1rem;
+      }
+
+      header .header-content ul li:last-child {
+        margin-right: 0; 
+    }
+
+  }
+
+  @media  (min-width:642px) and (max-width:958px){
+    header .header-content{
+        flex-direction: column;
+        align-content: center;
+      }
+
+
+      
+      header .header-content h1{
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+
+      header .header-content .fas {
+       margin-bottom: 1rem;
+      }
+
+      header .header-content ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    header .header-content ul li {
+        margin-right: 3rem; 
+    }
+
+
+  }
+
+  @media (max-width: 640px) {
+    /* CSS code for small screens */
+
+    header{
+        height: 30rem;
+    }
+
+    header .header-content{
+        flex-direction: column;
+        align-content: center;
+      }
+
+      header .header-content ul{
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      header .header-content h1{
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+
+      header .header-content .fas {
+       margin-bottom: 1rem;
+      }
+
+      header .header-content ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    header .header-content ul li {
+        margin-right: 0;
+        padding: 1rem;
+    }
+
   }
