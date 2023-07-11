@@ -374,3 +374,106 @@ body{
   }
 }
 
+/* Two banners section */
+
+.two-banner {
+  display: flex;
+  
+  max-width: 80rem;
+   margin-left: auto;
+  margin-right: auto; 
+ margin-top: 0.5rem;
+ margin-bottom: 3rem;
+ padding: 1rem;
+}
+
+.two-banner .banner-1{
+  background-image: url("img/banner-1.jpg");
+  background-size: cover;
+  height: 19rem;
+  width: 50rem;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+
+.two-banner .banner-2{
+  background-image: url("img/banner-2.jpg");
+  background-size: cover;
+  width: 50rem;
+  height: 19rem;
+  border-radius: 1rem;
+}
+
+
+.two-banner .two-banner-content {
+   margin-top: 2rem;
+   padding-left: 1rem;
+}
+
+.two-banner .two-banner-content h3{
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.two-banner .two-banner-content strong{
+  font-weight: 900;
+}
+
+.two-banner .two-banner-content p {
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+
+.two-banner .two-banner-content a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+ /* Making the two banner section responsive  */
+  
+ @media (min-width: 640px) and (max-width: 858px) {
+  /* CSS code for medium screens */
+  .two-banner{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .two-banner .banner-1 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 40rem;
+  }
+
+  .two-banner .banner-2 {
+    width: 40rem;
+  }
+
+}
+
+
+@media (max-width: 639px) {
+  /* CSS code for small screens */
+
+  .two-banner{
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .two-banner .banner-1 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 25rem;
+    
+  }
+
+  .two-banner .banner-2 {
+    width: 24rem;
+  }
+}
+
