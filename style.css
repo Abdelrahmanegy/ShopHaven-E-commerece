@@ -190,3 +190,187 @@ body{
     }
 
   }
+
+  
+
+  /* Banner */
+
+  .banner {
+    background-color: #d2e8e3;
+    display: flex;
+    max-width: 90rem;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    top: -5rem;
+  }
+
+  .banner .banner-content{
+    margin-top: 4rem;
+  }
+
+  .banner .banner-content h1{
+    font-weight: 300;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner .banner-content h1 strong{
+    font-weight: 900;
+  }
+
+  .banner .banner-content p{
+    font-weight: 900;
+    color: #ffa817;
+    margin-bottom: 2rem;
+  }
+
+  .banner .banner-content a {
+    color: #7b8eb7;
+    text-decoration: underline ;
+    text-underline-offset: 7px;
+    
+  }
+
+  .banner .banner-img  img{
+    display: inline-block;
+  }
+
+  /* .banner .banner-img .lamp-2{
+    position: relative;
+    top: -16rem;
+  }
+
+
+  .banner .banner-img .lamp-1{
+    position: relative;
+    top: -7rem;
+  } */
+
+  .banner .banner-img .lamp-2{
+    position: relative;
+    top: -40rem;
+    transition: top 0.3s ease-in-out;
+    animation: slideIn 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+
+
+  .banner .banner-img .lamp-1{
+    position: relative;
+    top: -40rem;
+    transition: top 0.3s ease-in;
+    animation: slideIn-1 0.8s ease-in-out forwards;
+  }
+
+  /* The slideIn animation */
+
+  @keyframes slideIn{
+          0%{
+              top: -40rem;
+          }
+
+          100%{
+            top: -16rem;
+          }
+  }
+
+  /* The slidIn-1 animation */
+
+  @keyframes slideIn-1{
+    0%{
+        top: -40rem;
+    }
+
+    100%{
+      top: -7rem;
+    }
+}
+
+/* slidIn-mobile */
+
+@keyframes slideIn-mobile{
+  0%{
+      top: -40rem;
+  }
+
+  100%{
+    top: -5rem;
+  }
+}
+
+@keyframes slideIn-1-mobile{
+  0%{
+      top: -40rem;
+  }
+
+  100%{
+    top: -2rem;
+  }}
+
+
+
+
+/* Making the banner responsive */
+   
+@media ( min-width:1138px)  and (max-width:1478px){
+  .banner{
+    top:0;
+  }
+}
+
+
+   @media (min-width:580px) and (max-width:1137px){
+  .banner{
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+
+  .banner .banner-content{
+    margin-bottom: 1rem;
+    
+  }
+
+  .banner .banner-img{
+    order: -1;
+  }
+}
+
+
+@media (max-width:579px){
+  .banner{
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+
+  .banner .banner-content{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    
+  }
+
+  .banner .banner-img{
+    order: -1;
+  }
+
+  .banner .banner-img img {
+       width: 10rem;
+  }
+
+  .banner .banner-img .lamp-2{
+    animation: slideIn-mobile 0.9s ease-in-out forwards ;
+    animation-delay: 0.5s;
+    
+  }
+
+  .banner .banner-img .lamp-1{
+    animation: slideIn-1-mobile 0.9s ease-in-out forwards ;
+    
+  }
+}
+
