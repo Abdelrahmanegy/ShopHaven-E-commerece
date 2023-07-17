@@ -609,6 +609,108 @@ body{
 
 
 
+/* chair banner */
+
+.chair-banner {
+ margin-top: 10rem;
+ max-width: 90rem;
+ margin-bottom: 5rem;
+ height: 15rem;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #f4f5f7;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ 
+}
+
+.chair-banner img {
+  margin-bottom: 10rem;
+  width: 23rem;
+}
+
+
+.chair-banner .c-b-content h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.chair-banner .c-b-content a {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+
+/* Making the banner section responsive */
+
+@media (min-width: 756px) and (max-width: 962px) {
+  /* CSS code for medium screens */
+  .chair-banner {
+    
+    height: 13rem ;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+    
+   }
+   
+   .chair-banner img {
+     margin-bottom: 10rem;
+     width: 20rem;
+   }
+   
+   
+   .chair-banner .c-b-content h1{
+     font-size: 1.7rem; 
+     margin-bottom: 2rem;
+   }
+   
+   .chair-banner .c-b-content a {
+     font-size: 1rem;
+     
+   }
+}
+
+
+@media (max-width: 755px){
+  .chair-banner {
+    
+    height: 13rem ;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+    
+   }
+   
+   .chair-banner img {
+     margin-bottom: 7rem;
+     width: 16rem;
+   }
+   
+   
+   .chair-banner .c-b-content h1{
+     font-size: 1.2rem; 
+     margin-bottom: 2rem;
+   }
+   
+   .chair-banner .c-b-content a {
+     font-size: 0.8rem;
+     
+   }
+}
+
+
+
+
+
+
 
 
 
