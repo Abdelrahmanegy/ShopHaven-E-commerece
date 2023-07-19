@@ -753,6 +753,144 @@ body{
 }
 
 
+/* Product types */
+.product-types {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 1rem;
+}
+
+.product-types .p-t-desc {
+  margin-right: 3rem;
+}
+.product-types .p-t-desc h1 {
+   font-size: 2.8rem;
+   font-weight: 400;
+}
+
+
+
+
+.product-types .p-t-desc p {
+  margin-bottom: 1rem;
+  color: rgb(104, 104, 104);
+}
+
+.product-types .p-t-desc a {
+   font-weight: 400;
+   text-decoration: underline;
+   text-underline-offset: 5px;
+}
+
+
+.product-types .slider-wrapper {
+  display: grid;
+ grid-template-columns: repeat(3,minmax(0,1fr));
+  column-gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+ 
+}
+
+
+
+.slider-wrapper .product-card img {
+  width: 22rem;
+  height: 25rem;
+  object-fit: cover;
+  
+}
+
+
+.slider-wrapper .product-card h4 {
+   margin-top: 1rem;
+   color: rgb(111, 110, 110);
+}
+
+.slider-wrapper .product-card  {
+  cursor: pointer;
+
+  
+}
+
+.slider-wrapper .product-card .price {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.slider-wrapper .product-card .p-c-desc{
+  margin-left: 2rem;
+}
+
+
+.divider {
+  margin-bottom: 1rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+ 
+
+
+/* Making the slider section responsive  */
+
+
+
+
+@media (min-width: 640px) and (max-width: 1141px) {
+  /* CSS code for medium screens */
+  .product-types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-types .p-t-desc {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 639px) {
+  /* CSS code for small screens */
+  .product-types {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .product-types .p-t-desc {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+
+  .product-types .slider-wrapper{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
