@@ -854,6 +854,7 @@ body{
     margin-right: 0;
     margin-bottom: 2rem;
   }
+  
 }
 
 
@@ -876,7 +877,131 @@ body{
     row-gap: 1rem;
   }
 
+  
+
 }
+
+
+/* Instagram  banner section */
+
+.instagram-banner {
+  margin-top: 8rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+
+.instagram-banner .i-b-imgs  {
+    display: flex;
+    max-width: 80rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.instagram-banner .i-b-imgs img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+}
+
+
+.instagram-banner {
+  text-align: center;
+}
+
+
+.instagram-banner .i-b-link {
+  position: relative;
+  bottom: 9rem;
+  
+}
+
+.instagram-banner .i-b-link a {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #8f9297;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  padding: 2rem 10rem;
+  border-radius: 7px;
+}
+
+
+/* Making the banner section responsive  */
+
+@media (min-width: 640px) and (max-width: 1098px) {
+  /* CSS code for medium screens */
+  
+  .instagram-banner .i-b-imgs img {
+    width: 10rem;
+    height: 10rem;
+    
+  }
+
+
+  .instagram-banner .i-b-link a {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #8f9297;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    border-radius: 7px;
+  }
+
+
+  .instagram-banner .i-b-link {
+    position: relative;
+    bottom: 6rem;
+    
+  }
+  
+}
+
+@media (min-width:1098px) and (max-width:1313px){
+
+  .instagram-banner{
+    padding: 3rem;
+  }
+  .instagram-banner .i-b-imgs img {
+    width: 15rem;
+    height: 15rem;
+    
+  }
+
+
+  .instagram-banner .i-b-link a {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #8f9297;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    border-radius: 7px;
+  }
+
+
+  .instagram-banner .i-b-link {
+    position: relative;
+    bottom: 8rem;
+    
+  }
+}
+
+
+
+
+@media (max-width: 639px) {
+  /* CSS code for small screens */
+  .instagram-banner{
+    display: none;
+  }
+}
+
 
 
 
